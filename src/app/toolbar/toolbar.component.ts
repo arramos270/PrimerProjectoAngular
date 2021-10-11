@@ -18,7 +18,13 @@ export class ToolbarComponent implements OnInit {
   }
 
   onCounterAddClick(){
-    this.counter++;
+    if(this.counter<20)
+      this.counter++;
+  }
+
+  onCounterAddClickMinus(){
+    if(this.counter>0)
+      this.counter--;
   }
 
 }
